@@ -4,6 +4,12 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Marcador PokeMMO</title>
     <style>
       body {
@@ -73,7 +79,7 @@
         color: #00c853;
       }
 
-      .card-verde .score-container{
+      .card-verde .score-container {
         border-top: 2px solid #00c853;
       }
 
@@ -91,7 +97,7 @@
         color: #ff1744;
       }
 
-      .card-roja .score-container{
+      .card-roja .score-container {
         border-top: 2px solid #ff1744;
       }
 
@@ -100,6 +106,8 @@
         place-items: center;
         flex-grow: 1;
         width: 450px;
+        align-content: end;
+        padding-bottom: 70px;
       }
 
       .sprite-container img {
@@ -109,29 +117,32 @@
       }
 
       .team-name {
-        font-size: 28px;
+        font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-top: 0px;
         margin-bottom: 10px;
         text-shadow: 1px 1px 3px #0008;
+        font-family: 'Press Start 2P', system-ui, sans-serif;
       }
 
       .score-container {
         width: 80%;
         border-top: 2px solid #ffffff4d;
-        padding-top: 10px;
+        padding-top: 20px;
         margin-bottom: 20px;
+        margin-top: 10px;
       }
 
       .score {
-        font-size: 92px;
+        font-size: 72px;
         font-weight: bold;
         text-align: center;
         line-height: 1;
         text-shadow: 0 0 10px currentColor;
         transition: transform 0.15s ease;
+        font-family: 'Press Start 2P', system-ui, sans-serif;
       }
 
       .score.bump {
