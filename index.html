@@ -124,7 +124,7 @@
         margin-top: 0px;
         margin-bottom: 10px;
         text-shadow: 1px 1px 3px #0008;
-        font-family: 'Press Start 2P', system-ui, sans-serif;
+        font-family: "Press Start 2P", system-ui, sans-serif;
       }
 
       .score-container {
@@ -142,11 +142,26 @@
         line-height: 1;
         text-shadow: 0 0 10px currentColor;
         transition: transform 0.15s ease;
-        font-family: 'Press Start 2P', system-ui, sans-serif;
+        font-family: "Press Start 2P", system-ui, sans-serif;
+      }
+
+      @keyframes scoreBumpAnim {
+        0% {
+          transform: scale(1);
+        }
+        30% {
+          transform: scale(1.25);
+        }
+        60% {
+          transform: scale(0.95);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
 
       .score.bump {
-        transform: scale(1.15);
+        animation: scoreBumpAnim 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
 
       .status {
